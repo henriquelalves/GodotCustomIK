@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/ship_dark.obj-65afa7b5d9efb3d08005a575808c68f1.mesh"
+
+[deps]
+
+files=[ "res://.import/ship_dark.obj-65afa7b5d9efb3d08005a575808c68f1.mesh" ]
+
+source_file="res://Assets/piratekey/Models/OBJ format/ship_dark.obj"
+dest_files=[ "res://.import/ship_dark.obj-65afa7b5d9efb3d08005a575808c68f1.mesh", "res://.import/ship_dark.obj-65afa7b5d9efb3d08005a575808c68f1.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

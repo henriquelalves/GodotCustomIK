@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://addons/IKTarget/IKTargetCustomInspector.gd" type="Script" id=1]
+
+[node name="IKTargetCustomInspector" type="VBoxContainer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SetBoneButton" type="Button" parent="."]
+margin_right = 1024.0
+margin_bottom = 20.0
+text = "Set Bone"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ClearButton" type="Button" parent="."]
+margin_top = 24.0
+margin_right = 1024.0
+margin_bottom = 44.0
+text = "Clear"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ResetDebugButton" type="Button" parent="."]
+margin_top = 48.0
+margin_right = 1024.0
+margin_bottom = 68.0
+text = "ResetDebug"
+__meta__ = {
+"_edit_use_anchors_": false
+}

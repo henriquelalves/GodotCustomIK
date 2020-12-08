@@ -1,0 +1,38 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Position3D",
+"class": "IKTarget",
+"language": "GDScript",
+"path": "res://addons/IKTarget/IKTarget.gd"
+}, {
+"base": "VBoxContainer",
+"class": "IKTargetCustomInspector",
+"language": "GDScript",
+"path": "res://addons/IKTarget/IKTargetCustomInspector.gd"
+} ]
+_global_script_class_icons={
+"IKTarget": "",
+"IKTargetCustomInspector": ""
+}
+
+[application]
+
+config/name="IKDemo"
+config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "IKTarget", "godot-plugin-refresher" )
+
+[rendering]
+
+environment/default_environment="res://default_env.tres"

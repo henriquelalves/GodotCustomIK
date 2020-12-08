@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/palm_detailed_short.obj-2c84b3a4e062a6927cd76537801b006a.mesh"
+
+[deps]
+
+files=[ "res://.import/palm_detailed_short.obj-2c84b3a4e062a6927cd76537801b006a.mesh" ]
+
+source_file="res://Assets/piratekey/Models/OBJ format/palm_detailed_short.obj"
+dest_files=[ "res://.import/palm_detailed_short.obj-2c84b3a4e062a6927cd76537801b006a.mesh", "res://.import/palm_detailed_short.obj-2c84b3a4e062a6927cd76537801b006a.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

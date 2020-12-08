@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/boat_large.obj-8c24faeae73e1e2a803dca58d4434844.mesh"
+
+[deps]
+
+files=[ "res://.import/boat_large.obj-8c24faeae73e1e2a803dca58d4434844.mesh" ]
+
+source_file="res://Assets/piratekey/Models/OBJ format/boat_large.obj"
+dest_files=[ "res://.import/boat_large.obj-8c24faeae73e1e2a803dca58d4434844.mesh", "res://.import/boat_large.obj-8c24faeae73e1e2a803dca58d4434844.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

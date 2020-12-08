@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/ship_light.obj-17f160364f37f9851748462128ccdf4f.mesh"
+
+[deps]
+
+files=[ "res://.import/ship_light.obj-17f160364f37f9851748462128ccdf4f.mesh" ]
+
+source_file="res://Assets/piratekey/Models/OBJ format/ship_light.obj"
+dest_files=[ "res://.import/ship_light.obj-17f160364f37f9851748462128ccdf4f.mesh", "res://.import/ship_light.obj-17f160364f37f9851748462128ccdf4f.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

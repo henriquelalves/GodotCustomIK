@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/cannon.obj-fc8e7a5651d1ddc583c4e8dcd7ccb837.mesh"
+
+[deps]
+
+files=[ "res://.import/cannon.obj-fc8e7a5651d1ddc583c4e8dcd7ccb837.mesh" ]
+
+source_file="res://Assets/piratekey/Models/OBJ format/cannon.obj"
+dest_files=[ "res://.import/cannon.obj-fc8e7a5651d1ddc583c4e8dcd7ccb837.mesh", "res://.import/cannon.obj-fc8e7a5651d1ddc583c4e8dcd7ccb837.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

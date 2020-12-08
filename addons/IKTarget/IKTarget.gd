@@ -93,30 +93,26 @@ func pass_chain():
 		targets.pop_back()
 	_point_bone_to(bones[-1], global_transform.xform(Vector3.RIGHT), transform.xform(Vector3.UP))
 	
-#	var bones_list = []
-#	bones_list.append(bone_to_tree_item[bones[-1]] as TreeItem)
-#	while (bones_list.size() != 0):
-#		var current_tree_item = bones_list[0]
-#		var next_item = current_tree_item.next()
-#		while(next_item != null):
-#			bones_list.append(next_item)
-#			next_item = current_tree_item.next()
-#
-#		var item_b = skel.find_bone(current_tree_item.get_text(0))
-#		var item_p_b = skel.get_bone_parent(item_b)
-#
-#		var p_gpose = skel.get_bone_global_pose(item_p_b)
-#		var p_grest = skel.get_bone_rest(item_p_b)
-#		var bone_transf_rest_obj = p_gpose * skel.get_bone_rest(item_b)
-#		var rest_length = skel.global_transform.xform(p_grest.origin).length()
-#
-#		skel
-#		bones_list.remove(0)
-#		skel.find_bone(current_tree_item.)
-		
+	var bones_list = []
+	bones_list.append(bone_to_tree_item[bones[-1]].get_children())
 	
-#	var last_bone_tree_item = bone_to_tree_item[bones[-1]] as TreeItem
-#	last_bone_tree_item.call_recursive("_reset_bone_size")
+	while (bones_list.size() != 0):
+		if (bones_list[0] == null): break
+		var current_tree_item = bones_list[0]
+		
+		var t_item_children = current_tree_item.get_children()
+		if (t_item_children != null): bones_list.append(t_item_children)
+		
+		var item_b = skel.find_bone(current_tree_item.get_text(0))
+		var item_p_b = skel.get_bone_parent(item_b)
+		var p_gpose = skel.get_bone_global_pose(item_p_b)
+		var p_grest = skel.get_bone_rest(item_p_b)
+		var bone_transf_rest_obj = p_gpose * skel.get_bone_rest(item_b)
+		var rest_length = skel.global_transform.xform(p_grest.origin).length()
+		
+		skel.set_bone_global_pose_override(item_b, bone_transf_rest_obj, 1, true) 
+		bones_list.remove(0)
+
 
 func _reset_bone_size():
 	pass

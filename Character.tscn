@@ -23,21 +23,21 @@ transform = Transform( 1, 0, 0, 0, 1, -2.84217e-14, 0, 2.84217e-14, 1, 0, 0.0033
 material/0 = SubResource( 1 )
 
 [node name="LeftHandIK" type="Position3D" parent="." index="1"]
-transform = Transform( 0.327759, 0.868181, 0.372606, -0.550422, -0.145068, 0.822186, 0.76786, -0.47457, 0.43032, 1.21555, 2.51018, -0.96906 )
+transform = Transform( 0.327759, 0.868181, 0.372606, -0.550422, -0.145068, 0.822186, 0.76786, -0.47457, 0.43032, 1.21555, 2.51018, -1.28355 )
 script = ExtResource( 3 )
 skel_nodepath = NodePath("../Root")
 ik_bone = "LeftHand"
 ik_bone_length = 0.0
 ik_limit = 3
 
-[node name="Tree2" type="Tree" parent="LeftHandIK" index="0"]
+[node name="Tree" type="Tree" parent="LeftHandIK" index="0"]
 hide_root = true
 
 [node name="Position3D" type="Position3D" parent="LeftHandIK" index="1"]
-transform = Transform( 1, -2.98023e-08, 5.66244e-07, 0, 1, -7.45058e-08, 8.9407e-08, -1.49012e-08, 0.999999, 0, 0, 0 )
+transform = Transform( 1, -2.68221e-07, 8.04663e-07, -2.98023e-08, 1, 3.27826e-07, 0, -2.23517e-07, 1, 0, 0, 0 )
 
 [node name="Position3D2" type="Position3D" parent="LeftHandIK" index="2"]
-transform = Transform( 1, -2.98023e-08, 5.66244e-07, 0, 1, -7.45058e-08, 8.9407e-08, -1.49012e-08, 0.999999, -0.680376, -0.136328, -0.519558 )
+transform = Transform( 1, -2.68221e-07, 8.04663e-07, -2.98023e-08, 1, 3.27826e-07, 0, -2.23517e-07, 1, -0.656864, 0.0405604, -0.564199 )
 
 [node name="RightHandIK" type="Position3D" parent="." index="2"]
 transform = Transform( 0.348826, -0.773647, 0.528952, -0.230741, -0.617925, -0.751617, 0.90834, 0.140133, -0.39406, -0.960799, 2.17498, -0.954154 )
@@ -46,43 +46,49 @@ skel_nodepath = NodePath("../Root")
 ik_bone = "RightHand"
 ik_limit = 3
 
-[node name="Tree2" type="Tree" parent="RightHandIK" index="0"]
+[node name="Tree" type="Tree" parent="RightHandIK" index="0"]
 hide_root = true
 
 [node name="Position3D" type="Position3D" parent="RightHandIK" index="1"]
 transform = Transform( 1, 0, 0, 0, 1, -2.6077e-08, 0, 1.49012e-08, 1, 0, 0, 0 )
 
 [node name="Position3D2" type="Position3D" parent="RightHandIK" index="2"]
-transform = Transform( 1, 0, 0, 0, 1, -2.6077e-08, 0, 1.49012e-08, 1, -0.632702, -0.423219, 0.414742 )
+transform = Transform( 1, 0, 0, 0, 1, -2.6077e-08, 0, 1.49012e-08, 1, -0.690913, -0.354814, 0.384944 )
 
 [node name="LeftFootIK" type="Position3D" parent="." index="3"]
-transform = Transform( 0.244715, 0.969595, 0, -0.6598, 0.166526, 0.732757, 0.710478, -0.179317, 0.680491, 0.416974, 0.0143875, -1.64555 )
+transform = Transform( 0.244715, 0.969595, 0, -0.6598, 0.166526, 0.732757, 0.710478, -0.179317, 0.680491, 0.416974, -0.258071, -1.64555 )
 script = ExtResource( 3 )
 skel_nodepath = NodePath("../Root")
 ik_bone = "LeftFoot"
 ik_limit = 3
 
-[node name="Tree2" type="Tree" parent="LeftFootIK" index="0"]
+[node name="Tree" type="Tree" parent="LeftFootIK" index="0"]
 hide_root = true
 
 [node name="Position3D" type="Position3D" parent="LeftFootIK" index="1"]
 transform = Transform( 1, 2.98023e-08, 1.19209e-07, 1.49012e-08, 1, -2.23517e-08, 0, 0, 1, 0, 0, 0 )
 
 [node name="Position3D2" type="Position3D" parent="LeftFootIK" index="2"]
-transform = Transform( 1, 2.98023e-08, 1.19209e-07, 1.49012e-08, 1, -2.23517e-08, 0, 0, 1, -0.918931, 0.0658443, 0.0422143 )
+transform = Transform( 1, 2.98023e-08, 1.19209e-07, 1.49012e-08, 1, -2.23517e-08, 0, 0, 1, -0.890225, 0.0943422, 0.221701 )
 
-[node name="RightFootIK" type="Position3D" parent="." index="4"]
-transform = Transform( -0.0522474, 0.994198, 0.0940244, -0.653671, -0.105228, 0.749428, 0.754974, -0.0223055, 0.655375, -0.76959, 0.380482, -1.82644 )
+[node name="RightFootIK2" type="Position3D" parent="." index="4"]
+transform = Transform( -0.0522474, 0.994198, 0.0940244, -0.324261, -0.105941, 0.940016, 0.944525, 0.0186251, 0.327914, -0.3049, 1.38317, -2.07724 )
+script = ExtResource( 3 )
+skel_nodepath = NodePath("../Root")
+ik_bone = "RightUpLeg"
+ik_limit = 1
+
+[node name="Tree" type="Tree" parent="RightFootIK2" index="0"]
+hide_root = true
+
+[node name="RightFootIK" type="Position3D" parent="." index="5"]
+transform = Transform( -0.223865, 0.841813, -0.491157, 0.0311125, 0.509863, 0.859692, 0.974123, 0.177174, -0.140332, -0.488062, -0.00361741, -1.81893 )
 script = ExtResource( 3 )
 skel_nodepath = NodePath("../Root")
 ik_bone = "RightFoot"
-ik_limit = 3
 
-[node name="Tree2" type="Tree" parent="RightFootIK" index="0"]
+[node name="Tree" type="Tree" parent="RightFootIK" index="0"]
 hide_root = true
 
 [node name="Position3D" type="Position3D" parent="RightFootIK" index="1"]
-transform = Transform( 0.999982, -1.06171e-06, 2.98023e-08, -1.6056e-06, 0.999983, -1.14553e-07, -5.48363e-06, -1.34856e-06, 0.999999, 0, 0, 0 )
-
-[node name="Position3D2" type="Position3D" parent="RightFootIK" index="2"]
-transform = Transform( 0.999982, -1.06171e-06, 2.98023e-08, -1.6056e-06, 0.999983, -1.14553e-07, -5.48363e-06, -1.34856e-06, 0.999999, -0.754166, 0.521854, -0.097228 )
+transform = Transform( 1, 1.49012e-07, 0, 1.3411e-07, 1, -1.86265e-09, 3.12924e-07, 4.17233e-07, 1, 0, 0, 0 )

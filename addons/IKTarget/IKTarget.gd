@@ -105,7 +105,7 @@ func pass_chain():
 		
 		var item_b = skel.find_bone(current_tree_item.get_text(0))
 		var item_p_b = skel.get_bone_parent(item_b)
-		var p_gpose = skel.get_bone_global_pose(item_p_b)
+		var p_gpose = skel.get_bone_globral_pose(item_p_b)
 		var p_grest = skel.get_bone_rest(item_p_b)
 		var bone_transf_rest_obj = p_gpose * skel.get_bone_rest(item_b)
 		var rest_length = skel.global_transform.xform(p_grest.origin).length()
